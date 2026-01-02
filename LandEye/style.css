@@ -1,0 +1,133 @@
+/* Background */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('ghana-map.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Main container */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Quote */
+.quote {
+  text-align: center;
+  color: #e74c3c;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  color: #555;
+}
+
+/* Inputs & Button */
+input, select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #27ae60;
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #2ecc71;
+  transform: translateY(-2px);
+}
+
+/* Lands and search results */
+#landList p, #searchResults p {
+  background: #ecf0f1;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  transition: background 0.3s;
+}
+
+#landList p:hover, #searchResults p:hover {
+  background: #d5f5e3;
+}
+
+/* Disaster images */
+.disasters {
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.disasters img {
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+.disasters img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .disasters img {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  input, select, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
